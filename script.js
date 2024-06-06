@@ -77,7 +77,8 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e) {
 
     if (email === storedEmail && password === storedPassword) {
         localStorage.setItem('isLoggedIn', 'true'); 
-        window.location.href = 'course.html'; 
+        window.location.href = 'course.html';
+    } else {
         alert('Incorrect email or password.');
     }
 });
